@@ -1,0 +1,55 @@
+.header {
+    background-image: url(../img/header-bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    color: $white;
+    position: relative;
+    &::before {
+        content: '';
+        background-color: #212121;
+        opacity: 0.85;
+        height:100%;
+        position: absolute;
+        width:100%;
+    }
+    &__top {
+        padding-top: 20px;
+        .header__phone .phone__tel{ 
+            color: $white;
+        }
+    }
+    &__content {
+        padding: 113px 25px 0 25px;
+        text-align: center;
+        .header__title {
+            font-size: 48px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .header__subtitle {
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 46px;
+            padding-bottom: 100px;
+        }
+        .header__list {
+            .header__item {
+                max-width: 164px;
+                img {
+                    max-height: 64px;
+                    height: 100%;
+                    object-fit: none;
+                }
+                p {
+                    font-size: 14px;
+                    padding-top: 27px;
+                    line-height: 18px;
+                }
+            }
+        }
+    }
+    &__btn {
+        padding: 120px 0 130px 0;
+    }
+}

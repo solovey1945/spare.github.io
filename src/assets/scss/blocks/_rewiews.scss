@@ -1,0 +1,30 @@
+.rewiews {
+    background-color: $bg-section;
+    padding: 80px 0;
+    &__list {
+        margin-top: 6px;
+        .rewiews__item {
+            display: flex;
+            margin-top: 55px;
+            .rewiews__content {
+                margin-left: 20px;
+                font-weight: 700;
+                .rewiews__name {
+                    color: #757575;
+                    font-size: 12px;
+                }
+                .rewiews__title {
+                    color: $red;
+                    font-size: 16px;
+                    padding: 12px 0 14px 0;
+                    display: block;
+                }
+                .rewiews__text {
+                    color: #2b2b2b;
+                    font-size: 13px;
+                    line-height: 16px;
+                }
+            }
+        }
+    }
+}

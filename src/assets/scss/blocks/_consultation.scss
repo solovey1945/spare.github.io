@@ -1,0 +1,13 @@
+.consultation {
+    padding: 80px 0;
+    background-color: #dbdbdb;
+    .form {
+        @include box($white, 60px);
+        max-width: 740px;
+        margin: 60px auto 0 auto;
+        &__btn {
+            display: block;
+            margin: 55px auto 0 auto;
+        }
+    }
+}

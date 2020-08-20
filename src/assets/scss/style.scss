@@ -1,0 +1,113 @@
+@import 'utils/vars';
+@import 'utils/mixins';
+@import 'utils/fonts';
+@import 'utils/nullstyle';
+
+::-webkit-scrollbar {
+    width: 3px;
+    height: 6px;
+    background-color: #e3e9eb;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 3px;
+    height: 6px;
+    background-color: #ff162c;
+}
+.wrapper {
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+    position: relative;
+}
+
+.container {
+    max-width: 940px !important;
+    width: 100%;
+    margin: 0 auto;
+}
+
+body {
+    font-family: $font-def;
+    color: $black;
+}
+
+.logo {
+    color: $logo-color;
+    font-size: 30px;
+    line-height: 46px;
+    text-transform: uppercase;
+}
+
+.phone {
+    text-align: right;
+    &__tel {
+        font-size: 28px;
+        font-weight: 700;
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: 7px;
+    }
+    &__link {
+        color: $red;
+        font-size: 16px;
+        text-decoration: underline;
+        background-color: transparent;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.btn {
+    color: $white;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 14px 30px;
+    border-radius: 25px;
+    border: 2px solid $red;
+    background-color: transparent;
+    transition: all .2s;
+    // width: 100%;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    &:hover {
+        background-color: $red;
+    }
+    &--red {
+        background-color: $red;
+        &:hover {
+            background-color: $hover-red;
+            border: 2px solid $hover-red;
+        }
+    }
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 16px;
+    padding-top: 21px;
+    text-align: center;
+}
+
+@import 'blocks/modals';
+@import 'blocks/header';
+@import 'blocks/features';
+@import 'blocks/request';
+@import 'blocks/instock';
+@import 'blocks/rewiews';
+@import 'blocks/consultation';
+@import 'blocks/contacts';
+@import 'blocks/footer';
+@import 'utils/media';
+
+
+
+

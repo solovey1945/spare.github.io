@@ -1,0 +1,16 @@
+.features {
+    padding: 80px 0 0 0;
+    &__item {
+        text-align: center;
+        &-title {
+            padding: 30px 0 17px 0;
+            font-size: 16px;
+            font-weight: 700;
+        }
+        &-text {
+            max-width: 240px;
+            margin: 0 auto;
+            padding-bottom: 85px;
+        }
+    }
+}
